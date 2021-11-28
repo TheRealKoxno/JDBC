@@ -12,7 +12,7 @@ public class DataUploader {
         var dataSource = new MysqlDataSource();
         dataSource.setUser("newuser");
         dataSource.setPassword("QAZPLMWSXokn1029");
-        dataSource.setURL("jdbc:mysql://localhost:3306/");
+        dataSource.setURL("jdbc:mysql://localhost:3306/air_travels");
         var uploader = new Uploader(dataSource);
         uploader.saveAirport(Parser.getAirport());
         uploader.saveBooking(Parser.getBooking());
